@@ -22,10 +22,8 @@ jobs:
 
       - name: Install dependencies and build
         run: |
-          npm install -g yarn
-          yarn install
-          yarn add -D @types/minimatch
-          yarn build
+          npm install 
+          npm run build
 
       - name: Zip artifact
         run: zip -r release.zip ./*
