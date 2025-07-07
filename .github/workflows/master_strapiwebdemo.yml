@@ -24,6 +24,7 @@ jobs:
         run: |
           npm install -g yarn
           yarn install
+          yarn add -D @types/minimatch
           yarn build
 
       - name: Zip artifact
